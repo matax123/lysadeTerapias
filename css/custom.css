@@ -1,0 +1,143 @@
+/* variables */
+:root{
+    --color1: #809A6F;
+    --color2: #F3E9DD;
+    --color3: #FDF6EC;
+    --color4: #B7CADB;
+    --color5: rgb(45,190,220);
+    --color6: rgb(51,199,233);
+    --color7: #97C4B8;
+    --whatsapp: rgb(69,200,85);
+    --whatsapp-hover: rgb(66,190,81);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(27,31,113);
+    border-color: rgb(27,31,113) transparent rgb(27,31,113) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#header{
+    background-color: var(--color1);
+}
+
+.navbar-brand{
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#inicio{
+    color: black !important;
+    background-color: var(--color2);
+}
+
+#misionVision{
+    background-color: #FAEBE0 !important;
+    color: #323232;
+    font-size: 1.15rem;
+    -webkit-box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.4);
+}
+
+#images{
+    background-color: var(--color1);
+}
+#images img{
+    width: 100%;
+    height: auto;
+}
+
+#servicios{
+    font-weight: bold;
+    background-color: #FAF0D7;
+}
+
+#servicios>div>h1{
+    color: #A19882;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: var(--whatsapp) !important;
+    border-color: var(--whatsapp) !important;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: var(--whatsapp-hover) !important;
+    border-color: var(--whatsapp-hover) !important;
+}
+
+.card{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border-color: #A2B38B;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .card-title{
+    background-color: var(--color5);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+} */
+
+.card-title{
+    background-color: var(--color7);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+}
+
+/* @media screen and (max-width: 768px){
+    #images{
+        height: 50px;
+    }
+    #images>div>img{
+        display: none;
+    }
+} */
