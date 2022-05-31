@@ -12,8 +12,8 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none !important;
 }
@@ -65,7 +65,7 @@
 }
 
 #inicio{
-    color: black !important;
+    color: #6D8B74 !important;
     background-color: var(--color2);
 }
 
@@ -77,7 +77,7 @@
     box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.4);
 }
 
-#images{
+#imagenes{
     background-color: var(--color1);
 }
 #images img{
@@ -86,17 +86,16 @@
 }
 
 #servicios{
-    font-weight: bold;
     background-color: #FAF0D7;
 }
 
 #servicios>div>h1{
-    color: #A19882;
-    font-weight: bold;
+    color: #C1AC95;
 }
 
 .btn-primary{
-    background-color: var(--whatsapp) !important;
+    /* background-color: var(--whatsapp) !important; */
+    background-color: #36AE7C !important;
     border-color: var(--whatsapp) !important;
     font-weight: bold;
 }
@@ -108,9 +107,10 @@
 .card{
     background-color: #F9F9F9;
     border-radius: 10px;
-    border-color: #A2B38B;
+    border-color: #CDC2AE;
     border-width: 3px;
     border-style: solid;
+    color: #6D8B74;
 }
 
 .card-body{
@@ -127,17 +127,34 @@
 } */
 
 .card-title{
-    background-color: var(--color7);
+    background-color: #CDC2AE;
     color: white;
     border-radius: 5px 5px 0px 0px;
     padding: 10px;
 }
 
-/* @media screen and (max-width: 768px){
-    #images{
+#packs{
+    background-color: #E4E9BE;
+    color: #6D8B74;
+}
+
+.pack{
+    background-color: #FAFDD6;
+    border-radius: 10px;
+    border-color: #A2B38B;
+    border-width: 2px;
+    border-style: solid;
+}
+.pack>p{
+    margin: 0px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px){
+    #imagenes{
         height: 50px;
     }
-    #images>div>img{
+    #imagenes>div>img{
         display: none;
     }
-} */
+}
